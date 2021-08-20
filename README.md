@@ -6,7 +6,7 @@
 
 A collection of Jupyter Notebooks, HTML and JS code for Data Scientists.
 
-Comments on the single scripts can be found on my [Medium blog](https://alod83.medium.com/) as well as on my [Web site](https://alod83online.wordpress.com/).
+Comments on the single scripts can be found on my [Medium blog](https://alod83.medium.com/) as well as on my [Web site](https://alod83.altervista.org/).
 
 ## Programming Languages
 * Python 3.X
