@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"grid": false, "titleFontSize": 14}, "title": {"anchor": "middle", "color": "grey", "fontSize": 20}}, "hconcat": [{"data": {"name": "data-8e0f034887e8c763e5dfd883a837cea6"}, "mark": {"type": "image", "align": "center", "baseline": "top", "height": 300, "width": 300}, "encoding": {"url": {"field": "url", "type": "nominal"}}}, {"layer": [{"data": {"name": "data-6fd4a756108fbde053b0461d6f605728"}, "mark": {"type": "line"}, "encoding": {"color": {"field": "sectperf", "legend": null, "type": "nominal"}, "strokeWidth": {"condition": {"test": "(datum.sectperf === 'BES')", "value": 5}, "value": 1}, "x": {"axis": {"labelAngle": 0}, "field": "date", "title": "", "type": "ordinal"}, "y": {"field": "value", "title": "Percentage of gross domestic product", "type": "quantitative"}}, "title": ["Driving Growth:", "A Decade of Business Enterprise Performance Dominance (2010-2021)"]}, {"data": {"name": "data-3490ac67c7a18fe38731c6ea750c87de"}, "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 7, "fontSize": 14}, "encoding": {"color": {"field": "sectperf", "legend": null, "type": "nominal"}, "text": {"field": "sectperf", "type": "nominal"}, "x": {"axis": {"labelAngle": 0}, "field": "date", "title": "", "type": "ordinal"}, "y": {"field": "value", "title": "Percentage of gross domestic product", "type": "quantitative"}}}], "height": 400, "width": 600}], "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-8e0f034887e8c763e5dfd883a837cea6": [{"url": "red.png"}], "data-6fd4a756108fbde053b0461d6f605728": [{"sectperf": "BES", "date": 2010, "value": 0.66}, {"sectperf": "GOV", "date": 2010, "value": 0.17}, {"sectperf": "HES", "date": 2010, "value": 0.35}, {"sectperf": "PNP", "date": 2010, "value": 0.04}, {"sectperf": "TOTAL", "date": 2010, "value": 1.22}, {"sectperf": "BES", "date": 2011, "value": 0.66}, {"sectperf": "GOV", "date": 2011, "value": 0.16}, {"sectperf": "HES", "date": 2011, "value": 0.34}, {"sectperf": "PNP", "date": 2011, "value": 0.04}, {"sectperf": "TOTAL", "date": 2011, "value": 1.2}, {"sectperf": "BES", "date": 2012, "value": 0.68}, {"sectperf": "GOV", "date": 2012, "value": 0.19}, {"sectperf": "HES", "date": 2012, "value": 0.35}, {"sectperf": "PNP", "date": 2012, "value": 0.04}, {"sectperf": "TOTAL", "date": 2012, "value": 1.26}, {"sectperf": "BES", "date": 2013, "value": 0.71}, {"sectperf": "GOV", "date": 2013, "value": 0.18}, {"sectperf": "HES", "date": 2013, "value": 0.37}, {"sectperf": "PNP", "date": 2013, "value": 0.04}, {"sectperf": "TOTAL", "date": 2013, "value": 1.3}, {"sectperf": "BES", "date": 2014, "value": 0.76}, {"sectperf": "GOV", "date": 2014, "value": 0.18}, {"sectperf": "HES", "date": 2014, "value": 0.36}, {"sectperf": "PNP", "date": 2014, "value": 0.04}, {"sectperf": "TOTAL", "date": 2014, "value": 1.34}, {"sectperf": "BES", "date": 2015, "value": 0.78}, {"sectperf": "GOV", "date": 2015, "value": 0.18}, {"sectperf": "HES", "date": 2015, "value": 0.34}, {"sectperf": "PNP", "date": 2015, "value": 0.04}, {"sectperf": "TOTAL", "date": 2015, "value": 1.34}, {"sectperf": "BES", "date": 2016, "value": 0.83}, {"sectperf": "GOV", "date": 2016, "value": 0.17}, {"sectperf": "HES", "date": 2016, "value": 0.33}, {"sectperf": "PNP", "date": 2016, "value": 0.03}, {"sectperf": "TOTAL", "date": 2016, "value": 1.37}, {"sectperf": "BES", "date": 2017, "value": 0.85}, {"sectperf": "GOV", "date": 2017, "value": 0.17}, {"sectperf": "HES", "date": 2017, "value": 0.32}, {"sectperf": "PNP", "date": 2017, "value": 0.02}, {"sectperf": "TOTAL", "date": 2017, "value": 1.37}, {"sectperf": "BES", "date": 2018, "value": 0.9}, {"sectperf": "GOV", "date": 2018, "value": 0.18}, {"sectperf": "HES", "date": 2018, "value": 0.32}, {"sectperf": "PNP", "date": 2018, "value": 0.02}, {"sectperf": "TOTAL", "date": 2018, "value": 1.42}, {"sectperf": "BES", "date": 2019, "value": 0.92}, {"sectperf": "GOV", "date": 2019, "value": 0.18}, {"sectperf": "HES", "date": 2019, "value": 0.33}, {"sectperf": "PNP", "date": 2019, "value": 0.03}, {"sectperf": "TOTAL", "date": 2019, "value": 1.46}, {"sectperf": "BES", "date": 2020, "value": 0.93}, {"sectperf": "GOV", "date": 2020, "value": 0.2}, {"sectperf": "HES", "date": 2020, "value": 0.35}, {"sectperf": "PNP", "date": 2020, "value": 0.03}, {"sectperf": "TOTAL", "date": 2020, "value": 1.51}, {"sectperf": "BES", "date": 2021, "value": 0.91}, {"sectperf": "GOV", "date": 2021, "value": 0.2}, {"sectperf": "HES", "date": 2021, "value": 0.35}, {"sectperf": "PNP", "date": 2021, "value": 0.03}, {"sectperf": "TOTAL", "date": 2021, "value": 1.48}], "data-3490ac67c7a18fe38731c6ea750c87de": [{"sectperf": "BES", "date": 2021, "value": 0.91}, {"sectperf": "GOV", "date": 2021, "value": 0.2}, {"sectperf": "HES", "date": 2021, "value": 0.35}, {"sectperf": "PNP", "date": 2021, "value": 0.03}, {"sectperf": "TOTAL", "date": 2021, "value": 1.48}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
